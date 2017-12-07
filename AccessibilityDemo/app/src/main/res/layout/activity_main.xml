@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    tools:context="com.zhaoxuan.accessibilitydemo.MainActivity">
+
+    <Button
+        android:id="@+id/checkServiceRunning"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="检查是否开启辅助模式" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hello World!" />
+
+    <Button
+        android:id="@+id/button1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="改变文本内容" />
+
+    <include layout="@layout/view_line" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="单纯点击按钮" />
+
+    <include layout="@layout/view_line" />
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Button3" />
+
+    <Button
+        android:id="@+id/button4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:clickable="false"
+        android:text="Button4" />
+
+    <Button
+        android:id="@+id/button5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="使用辅助模式点击Button3、4" />
+
+    <include layout="@layout/view_line" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="暴打小女孩1" />
+
+    <com.zhaoxuan.accessibilitydemo.widget.CustomerTextView
+        android:id="@+id/customerTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="暴打小女孩2" />
+
+    <com.zhaoxuan.accessibilitydemo.widget.CustomerImageView
+        android:id="@+id/customerImageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="暴打小女孩3" />
+
+
+    <com.zhaoxuan.accessibilitydemo.widget.CustomerButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="暴打小女孩4"
+        app:str="傻乎乎你看不到" />
+
+    <com.zhaoxuan.accessibilitydemo.widget.DefensiveTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="嘿嘿嘿6" />
+
+    <Button
+        android:id="@+id/button6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="获取文本内容" />
+
+    <include layout="@layout/view_line" />
+
+    <Button
+        android:id="@+id/button7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="获取正在运行的辅助模式" />
+
+
+</LinearLayout>
